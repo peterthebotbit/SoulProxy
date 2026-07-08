@@ -207,15 +207,19 @@ BrowserView.style = css`
 		min-height: 0;
 		display: none;
 		flex-direction: column;
+		padding: 0.5rem;
+		box-sizing: border-box;
 	}
 	:scope.active {
 		display: flex;
 	}
 
 	iframe {
-		background: white;
+		background: linear-gradient(135deg, #f8f8f8 0%, #e4e4e4 100%);
 		flex: 1;
-		border: none;
+		border: 1px solid rgba(255,255,255,0.18);
+		border-radius: 0.9rem;
+		box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
 	}
 `;
 
